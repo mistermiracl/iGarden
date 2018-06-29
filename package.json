@@ -1,0 +1,26 @@
+{
+  "name": "igarden",
+  "version": "1.0.0",
+  "description": "Api to act as mqtt broker for greenhouse data",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/llsoulblackll/iGarden.git"
+  },
+  "author": "ozy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llsoulblackll/iGarden/issues"
+  },
+  "homepage": "https://github.com/llsoulblackll/iGarden#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "mosca": "^2.8.2",
+    "mqtt": "^2.18.2",
+    "serialport": "^6.2.0"
+  }
+}
