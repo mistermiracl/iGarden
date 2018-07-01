@@ -2,10 +2,11 @@
   "name": "igarden",
   "version": "1.0.0",
   "description": "Api to act as mqtt broker for greenhouse data",
-  "main": "server.js",
+  "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "nodemon server.js"
+    "watch": "nodemon app.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,10 @@
     "express": "^4.16.3",
     "mosca": "^2.8.2",
     "mqtt": "^2.18.2",
+    "mysql": "^2.15.0",
     "serialport": "^6.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.5"
   }
 }

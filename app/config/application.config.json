@@ -1,0 +1,9 @@
+{
+    "db": {
+        "engine": "MySQL",
+        "user": "root",
+        "password": "mysql",
+        "host": "localhost",
+        "port": 3306
+    }
+}

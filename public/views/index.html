@@ -9,11 +9,11 @@
 <body>
     <h2>Hello World!</h2>
     <h3 id="humidityHolder"></h3>
-    <script src="https://unpkg.com/mqtt@2.18.2/dist/mqtt.min.js"></script>
+    <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
     <script type="application/javascript">
         var holder = document.getElementById('humidityHolder');
-        const TOPIC = "H";
-        const client = mqtt.connect("mqtt://localhost:8000");
+        const TOPIC = "Moisture";
+        const client = mqtt.connect("ws://localhost:8000");
         client.subscribe(TOPIC);
         client.on('message', (topic, payload) => {
             holder.innerHTML = [topic, payload].join(': ');
